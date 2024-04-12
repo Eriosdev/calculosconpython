@@ -17,19 +17,12 @@ astros = [
 
 # Función para calcular la velocidad de escape
 def calcular_velocidad_escape(masa, radio):
-    return math.sqrt(2 * G * masa / radio) / 1000  # Convertir a km/s
-
-# Imprimir resultados
-print("Velocidades de escape:")
-for astro in astros:
-    velocidad_escape = calcular_velocidad_escape(astro["masa"], astro["radio"])
-    print(f"{astro['nombre']}: {round(velocidad_escape, 2)} km/s")
-
+    velocidad_km_por_s = math.sqrt(2 * G * masa / radio) / 1000  # Convertir a km/s
+    velocidad_km_por_h = velocidad_km_por_s * 3600  # Convertir a km/h
+    return velocidad_km_por_s, velocidad_km_por_h
 
 # Imprimir resultados
 print("Velocidades de escape:")
 for astro in astros:
     velocidad_escape_km_por_s, velocidad_escape_km_por_h = calcular_velocidad_escape(astro["masa"], astro["radio"])
     print(f"{astro['nombre']}: {round(velocidad_escape_km_por_s, 2)} km/s, {round(velocidad_escape_km_por_h, 2)} km/h")
-
-    
