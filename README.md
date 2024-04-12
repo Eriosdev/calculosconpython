@@ -21,4 +21,17 @@ Calcular la velocidad de escape de los lugares indicados en esta tabla .
 ve = √(2GM / r)
 
 
+RESULTADO  DESPUES DE EJECUTAR VELOCIDADESCAPE.PY
+
+$ python3 velocidadescape.py
+Velocidades de escape:
+Earth: 11.18 km/s
+Moon: 2.37 km/s
+Mars: 5.01 km/s
+Jupiter: 60.23 km/s
+Sun: 617.77 km/s
+White Dwarf (Sirius B): 6670.33 km/s
+Neutron Star (Crab Pulsar): 193324.6 km/s
+Black Hole (Cygnus X-1): 172227.24 km/s
+
 
